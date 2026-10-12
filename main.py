@@ -225,7 +225,7 @@ def get_nearby_places(latitude, longitude):
             headers={
                 "User-Agent": "HousingPricePredictionProject/1.0"
             },
-            timeout=40
+            timeout=90
         )
 
         response.raise_for_status()
