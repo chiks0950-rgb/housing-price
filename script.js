@@ -1,4 +1,4 @@
-const API_URL = " https://housing-price-f7fc.onrender.com/predict";
+const API_URL = " https://housing-price-f7fc.onrender.com";
 
 
 async function loadLocations() {
