@@ -220,7 +220,7 @@ def get_nearby_places(latitude, longitude):
     try:
 
         response = requests.post(
-            "https://overpass-api.de/api/interpreter",
+            "https://gall.openstreetmap.de/api/interpreter",
             data=query,
             headers={
                 "User-Agent": "HousingPricePredictionProject/1.0"
