@@ -232,8 +232,9 @@ def get_nearby_places(latitude, longitude):
 
         data = response.json()
 
-    except requests.RequestException:
 
+    except requests.RequestException as e:
+        print("Overpass API error:", repr(e))
         raise HTTPException(
             status_code=503,
             detail="Nearby places service unavailable"
